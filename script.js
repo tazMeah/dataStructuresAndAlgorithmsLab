@@ -17,6 +17,7 @@ $(document).ready(function(){
         <div>
             <h4>${bugs[bugs.length-1].title}</h4>
             <p>${bugs[bugs.length-1].details}</p>
+            <h6>Saturday Aug 04 2018 09:015:21 GMT-0400 (Eastern Daylight Time)</h6>
             <button id="fixed">Fixed</button>
         </div>
         `);
@@ -28,6 +29,7 @@ $(document).ready(function(){
         <div>
             <h4>${bugs[bugs.length-1].title}</h4>
             <p>${bugs[bugs.length-1].details}</p>
+            <h6>Sun Aug 05 2018 12:39:47 GMT-0400 (Eastern Daylight Time)</h6>
             <button id="fixed">Fixed</button>
         </div>
         `);

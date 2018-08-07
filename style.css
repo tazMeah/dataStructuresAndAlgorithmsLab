@@ -1,6 +1,84 @@
+body {
+    font-family: "Gentium Book Basic", Serif;
+    font-Size: 17px;
+    margin: 0;
+}
+
+
+h3 {
+    font-Family: "Alfa Slab One", Cursive;
+    font-Size: 48px;
+    text-: underline;
+    background: #fae16c;
+    margin: 0;
+    padding: 20px; 
+}
+
+h4 {
+    font-size: 22px;
+}
+
+
 form {
     display: flex;
     flex-direction: column;
-    max-width: 900px;
+    max-width: 600px;
+    background: #fdeea6;
+    padding: 30px;
     margin: 0 auto;
+
 }
+
+#report {
+    background: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e480962c9c0c092d7b006c04a9e2ab24&auto=format&fit=crop&w=800&q=60");
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 300px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px; 
+    border: 1px solid silver;
+    margin-bottom: 15px; 
+}
+
+button {
+    background: #a19766;
+    color: white;
+    font-family: "Gentium Book Basic", Serif;
+    cursor: pointer;
+    padding: 10px; 
+    font-size: 14px;
+    border-radius: 5px; 
+    margin-top: 15px;
+}
+
+label {
+    color: #888;
+}
+
+#allBugs {
+    padding: 40px;
+    color: #26282a;
+}
+
+#allBugs p {
+    max-width: 650px;
+}
+
+#allBugs div {
+    padding-bottom: 25px;
+    margin-bottom: 50px; 
+    border-bottom: 1px dotted silver;
+
+}
+
+Photo by Jason Leung on Unsplash
