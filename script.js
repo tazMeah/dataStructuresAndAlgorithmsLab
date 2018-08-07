@@ -9,9 +9,31 @@ $(document).ready(function(){
         this.details = details;
         this.priority = priority;
     }
+    // adding a couple sample bugs
+    let suggestion = new Bug("Suggestion Box Not Working", "I love the new suggestion box feature...in concept. Right now, the feature does not work. When I click the little lightbulb to submit an idea, nothing happens. Please fix this feature as I think it would be a great addition to the site. Thanks.", false);
+    bugs.push(suggestion);
+    // append to document
+    $("#allBugs").append(`
+        <div>
+            <h4>${bugs[bugs.length-1].title}</h4>
+            <p>${bugs[bugs.length-1].details}</p>
+            <button id="fixed">Fixed</button>
+        </div>
+        `);
 
+    let responsive = new Bug("Fix the iFrame", "When you go to the Videos page, there is an iFrame that looks wonderful on desktop, but it goes off of the screen on my mobile phone. Can someone fix this please?", true);
+    bugs.push(responsive);
+    // append to document
+    $("#allBugs").append(`
+        <div>
+            <h4>${bugs[bugs.length-1].title}</h4>
+            <p>${bugs[bugs.length-1].details}</p>
+            <button id="fixed">Fixed</button>
+        </div>
+        `);
 
     $(document).on("click", "#bugSubmit", function(){
+        let timeStamp = new Date();
         let title = $("form input").val();
         let details = $("form textarea").val();
         let priority = $("#check").prop("checked");
@@ -22,7 +44,9 @@ $(document).ready(function(){
         <div>
             <h4>${bugs[bugs.length-1].title}</h4>
             <p>${bugs[bugs.length-1].details}</p>
+            <h6>${timeStamp}</h6>
             <button id="fixed">Fixed</button>
+
         </div>
         `);
         // clear the form
